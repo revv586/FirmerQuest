@@ -8,3 +8,4 @@ client/.env
 client/.env.*
 dist/
 build/
+logs.xlsx
