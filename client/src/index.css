@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300..800&family=Sora:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #f4fbfa;
+  --bg-strong: #e6f5f2;
+  --card: #ffffff;
+  --card-border: #d6ece8;
+  --text: #0c2a2a;
+  --muted: #4a6d6a;
+  --primary: #2fbf9b;
+  --primary-700: #1e8d74;
+  --accent: #2d7dd2;
+  --accent-100: #e7f2ff;
+  --shadow: 0 10px 30px rgba(16, 80, 73, 0.12);
+  --radius: 16px;
+  --radius-sm: 10px;
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background-color: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 800px at 10% 10%, rgba(45, 125, 210, 0.08), transparent 60%),
+    radial-gradient(1200px 800px at 90% 20%, rgba(47, 191, 155, 0.12), transparent 55%),
+    linear-gradient(180deg, var(--bg) 0%, #f8fcfb 100%);
+  color: var(--text);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(12, 42, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(12, 42, 42, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  opacity: 0.35;
+}
+
+h1, h2, h3 {
+  font-family: "Sora", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1b5da8;
+}
